@@ -1,9 +1,24 @@
-import React from 'react'
-import styles from "./featured.module.css"
+import React from 'react';
+import styles from "./featured.module.css";
+import Image from "next/image";
 
 const Featured = () => {
   return (
-    <div className={styles.container}>Featured</div>
+    <div className={styles.container}>
+      <h1 className={styles.title}>
+        <b className={styles.bold}>Hey, new pythagore here !</b> Discover my stories and creative ideas.
+      </h1>
+      <div className={styles.post}>
+        <div className={styles.imgContainer}>
+          <Image src="/p1.jpeg" alt='' fill className={styles.image} />
+        </div>
+        <div className={styles.textContainer}>
+          <h1 className={styles.postTitle}>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+          <p className={styles.postDesc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste delectus blanditiis totam, accusamus aliquid modi cumque minus doloremque, quae tempore laudantium maxime, eum consequatur vel! In, ipsa quia! Quas?</p>
+          <button className={styles.button}>Read More</button>
+        </div>
+      </div>
+    </div>
   )
 }
 
